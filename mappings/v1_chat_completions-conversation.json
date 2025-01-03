@@ -4,7 +4,7 @@
     "urlPath" : "/v1/chat/completions",
     "method" : "POST",
     "bodyPatterns" : [ {
-      "contains" : "Knock knock"
+      "contains" : "Tell me a joke"
     } ]
   },
   "response" : {
