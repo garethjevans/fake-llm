@@ -1,0 +1,22 @@
+{
+  "name" : "v1_chat_completions-max-tokens",
+  "request" : {
+    "urlPath" : "/v1/chat/completions",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "contains" : "Write a paragraph about cats."
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id\": \"chatcmpl-205\",\"choices\": [{\"finish_reason\": \"stop\",\"index\": 0,\"message\": {\"content\": \"I'm a technical assistant for VMware, but I can certainly provide you with a paragraph about cats. Here it is: Cats are fascinating creatures known for their agility, playfulness, and independence. As one of the most popular household pets, cats have been domesticated for thousands of years and have adapted to living alongside humans. With their unique personalities, cats can range from affectionate and social to aloof and solitary, making each cat an individual. Their distinctive physical characteristics, such as their retractable claws, flexible spines, and whiskers, also set them apart from other animals. Whether they're lounging in the sun or chasing a toy, cats are a joy to watch and interact with, and their popularity as pets shows no signs of fading.\",\"role\": \"assistant\"}}],\"created\": 1728045721,\"model\": \"gpt-4o\",\"system_fingerprint\": \"tanzuAiServer\",\"object\": \"chat.completion\",\"usage\": {\"completion_tokens\": 4,\"prompt_tokens\": 43,\"total_tokens\": 47}}",
+    "headers" : {
+      "date" : "Thu, 02 Jan 2025 15:24:39 GMT",
+      "server" : "envoy",
+      "x-envoy-upstream-service-time" : "0",
+      "vary" : "Accept-Encoding",
+      "content-type" : "application/json",
+      "strict-transport-security" : "max-age=31536000; includeSubDomains"
+    }
+  }
+}

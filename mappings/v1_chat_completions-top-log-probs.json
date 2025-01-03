@@ -1,0 +1,22 @@
+{
+  "name" : "v1_chat_completions-top-log-probs",
+  "request" : {
+    "urlPath" : "/v1/chat/completions",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "contains" : "Tell me a joke"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id\": \"chatcmpl-205\",\"choices\": [{\"finish_reason\": \"stop\",\"index\": 0,\"message\": {\"content\": \"Microwave\",\"role\": \"assistant\"}}],\"created\": 1728045721,\"model\": \"gpt-4o\",\"system_fingerprint\": \"tanzuAiServer\",\"object\": \"chat.completion\",\"usage\": {\"completion_tokens\": 4,\"prompt_tokens\": 43,\"total_tokens\": 47}}",
+    "headers" : {
+      "date" : "Thu, 02 Jan 2025 15:24:39 GMT",
+      "server" : "envoy",
+      "x-envoy-upstream-service-time" : "0",
+      "vary" : "Accept-Encoding",
+      "content-type" : "application/json",
+      "strict-transport-security" : "max-age=31536000; includeSubDomains"
+    }
+  }
+}
