@@ -4,7 +4,7 @@
     "urlPath" : "/v1/chat/completions",
     "method" : "POST",
     "bodyPatterns" : [ {
-      "matches" : ".*Randomly select a number between 1 and.*"
+      "matchesJsonPath" : "$.temperature"
     } ]
   },
   "response" : {

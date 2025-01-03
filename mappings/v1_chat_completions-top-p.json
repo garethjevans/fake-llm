@@ -4,7 +4,7 @@
     "urlPath" : "/v1/chat/completions",
     "method" : "POST",
     "bodyPatterns" : [ {
-      "contains" : "Find three names of animals that never existed."
+      "matchesJsonPath" : "$.top_p"
     } ]
   },
   "response" : {

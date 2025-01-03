@@ -1,10 +1,10 @@
 {
-  "name" : "v1_chat_completions-stream-single",
+  "name" : "v1_chat_completions-stream-options",
   "request" : {
     "urlPath" : "/v1/chat/completions",
     "method" : "POST",
     "bodyPatterns" : [ {
-      "contains" : "Please repeat this and only this once: Hello Stream Test"
+      "matchesJsonPath" : "$.stream_options.include_usage"
     } ]
   },
   "response" : {

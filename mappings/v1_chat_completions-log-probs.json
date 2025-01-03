@@ -1,10 +1,10 @@
 {
-  "name" : "v1_chat_completions-logit-bias-2",
+  "name" : "v1_chat_completions-logprobs",
   "request" : {
     "urlPath" : "/v1/chat/completions",
     "method" : "POST",
     "bodyPatterns" : [ {
-      "contains" : "Finish this sentence"
+      "matchesJsonPath" : "$.logprobs"
     } ]
   },
   "response" : {

@@ -4,7 +4,7 @@
     "urlPath" : "/v1/chat/completions",
     "method" : "POST",
     "bodyPatterns" : [ {
-      "contains" : "Replace the following sentence by changing the nouns"
+      "matchesJsonPath" : "$.frequency_penalty"
     } ]
   },
   "response" : {
